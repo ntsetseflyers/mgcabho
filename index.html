@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mgcabho Construction</title>
+  <style>
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --gray: #f2f2f2;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    header {
+      background: var(--black);
+      color: var(--white);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-left: 6px solid var(--black);
+      padding-left: 1rem;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      border: 2px solid var(--black);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .service-card:hover {
+      background: var(--black);
+      color: var(--white);
+      transform: translateY(-5px);
+    }
+
+    .projects {
+      background: var(--gray);
+    }
+
+    .project-list {
+      list-style: none;
+    }
+
+    .project-list li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .community {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .community p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .contact {
+      background: var(--gray);
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 0.8rem;
+      border: 1px solid #000;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      background: var(--black);
+      color: var(--white);
+      border: none;
+      padding: 0.9rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <img src="logo.png" alt="Mgcabho Construction Logo" style="height:50px;background:#fff;padding:5px;" />
+      <h1>Mgcabho Construction</h1>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Building Strong Foundations for the Future</h2>
+    <p>
+      Mgcabho Construction is a trusted construction company delivering high‑quality infrastructure,
+      buildings, bridges, and civil works while supporting community development and local events.
+    </p>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>
+      Mgcabho Construction is a full‑service construction company with experience in civil,
+      commercial, and residential projects. We are committed to excellence, safety, and
+      sustainable development, ensuring every project meets the highest standards of quality.
+    </p>
+  </section>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service-card">
+        <h4>Building Construction</h4>
+        <p>Residential, commercial, and industrial building projects.</p>
+      </div>
+      <div class="service-card">
+        <h4>Bridge Construction</h4>
+        <p>Design and construction of durable and safe bridges.</p>
+      </div>
+      <div class="service-card">
+        <h4>Civil Engineering</h4>
+        <p>Roads, drainage systems, earthworks, and infrastructure development.</p>
+      </div>
+      <div class="service-card">
+        <h4>Renovations & Maintenance</h4>
+        <p>Upgrades, repairs, and long‑term maintenance solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h3>Project Gallery</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;">
+      <img src="project1.jpg" alt="Project 1" style="width:100%;border:3px solid #000;" />
+      <img src="project2.jpg" alt="Project 2" style="width:100%;border:3px solid #000;" />
+      <img src="project3.jpg" alt="Project 3" style="width:100%;border:3px solid #000;" />
+      <img src="project4.jpg" alt="Project 4" style="width:100%;border:3px solid #000;" />
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h3>Our Projects</h3>
+    <ul class="project-list">
+      <li>Commercial and residential building developments</li>
+      <li>Bridge and structural construction projects</li>
+      <li>Road and civil infrastructure works</li>
+      <li>Public and private sector construction projects</li>
+    </ul>
+  </section>
+
+  <section id="community" class="community">
+    <h3>Community Involvement</h3>
+    <p>
+      We believe in giving back to the community. Mgcabho Construction proudly supports
+      local sporting and community events such as the <strong>Mbube Marathon</strong> and
+      <strong>Mlilwane Cycling</strong>, contributing to healthy lifestyles and community growth.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Information</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem;">
+      <div style="border:2px solid #000;padding:1.5rem;">
+        <h4>Phone</h4>
+        <p>📞 +268 7XX XXXX</p>
+      </div>
+      <div style="border:2px solid #000;padding:1.5rem;">
+        <h4>Email</h4>
+        <p>✉️ info@mgcabho.co.sz</p>
+      </div>
+      <div style="border:2px solid #000;padding:1.5rem;">
+        <h4>Facebook</h4>
+        <p>
+          <a href="https://facebook.com/mgcabhoconstruction" target="_blank" style="color:#000;font-weight:bold;">Mgcabho Construction</a>
+        </p>
+      </div>
+    </div>
+
+    <h3>Send Us a Message</h3>
+    <h3>Contact Us</h3>
+    <form action="send.php" method="post">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <!-- Form connected to Gmail via send.php -->
+    </form>
+  </section>
+
+  <section id="registration">
+    <h3>Company Registration & Tenders</h3>
+    <p>
+      Mgcabho Construction is fully committed to compliance, transparency, and professionalism.
+      Our operations align with statutory requirements for construction companies, enabling us
+      to participate in public and private sector tenders.
+    </p>
+    <ul style="margin-top:1rem;line-height:1.8;">
+      <li>✔ Registered construction company</li>
+      <li>✔ Health & Safety compliant</li>
+      <li>✔ Experienced technical team</li>
+      <li>✔ Capacity for civil, building, and bridge projects</li>
+      <li>✔ Available for government & private tenders</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Mgcabho Construction. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
