@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mgcabho Construction | Gallery</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #000;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      border-left: 6px solid #000;
+      padding-left: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery-item {
+      border: 3px solid #000;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .caption {
+      padding: 1rem;
+      font-weight: bold;
+      text-align: center;
+      background: #f2f2f2;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <h1>Mgcabho Construction</h1>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#community">Community</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- GALLERY SECTION -->
+  <section>
+    <h2>Project Gallery</h2>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="project1.jpg" alt="Commercial Building Construction">
+        <div class="caption">Commercial Building Construction</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="project2.jpg" alt="Bridge Construction Project">
+        <div class="caption">Bridge Construction Project</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="project3.jpg" alt="Civil Engineering Works">
+        <div class="caption">Civil Engineering & Infrastructure</div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="project4.jpg" alt="Renovation Project">
+        <div class="caption">Renovation & Maintenance Works</div>
+      </div>
+
+      <!-- You can add more projects below -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Mgcabho Construction. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
